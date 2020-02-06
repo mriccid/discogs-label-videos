@@ -1,0 +1,19 @@
+{
+  "name": "discogs-label-playlist",
+  "version": "1.0.0",
+  "description": "Generates a YouTube playlist containing all Discogs videos for a label",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "get": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
