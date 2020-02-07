@@ -22,6 +22,7 @@ async function getReleaseVideoList(releaseId: string) {
 const toIdList = () => R.pipe(R.map(R.prop("id")), R.take(VIDEO_REQUEST_SIZE));
 const awaitAll = () => promises => Promise.all(promises);
 const flatten = () => R.flatten;
+const unique = () => R.uniq;
 const mapToReleaseVideoList = () => R.map(getReleaseVideoList);
 const mapToTitleAndUrl = () => R.map(R.pick(["title", "uri"]));
 const log = () => value => console.info(value);
@@ -31,6 +32,7 @@ getLabelReleases(labelId)
   .then(mapToReleaseVideoList())
   .then(awaitAll())
   .then(flatten())
+  .then(unique())
   .then(mapToTitleAndUrl())
   .then(log())
   .catch(console.error);
