@@ -1,7 +1,7 @@
 import axios from "axios";
 import * as R from "ramda";
 
-const VIDEO_REQUEST_SIZE = 5;
+const VIDEO_REQUEST_SIZE = 10;
 
 // @todo add handling for rate limit :O
 
