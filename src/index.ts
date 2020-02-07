@@ -7,9 +7,7 @@ const VIDEO_REQUEST_SIZE = 5;
 
 const [, , labelId] = process.argv;
 
-const discogs = axios.create({
-  baseURL: "https://api.discogs.com"
-});
+const discogs = axios.create({ baseURL: "https://api.discogs.com" });
 
 async function getLabelReleases(labelId: string) {
   const response = await discogs.get(`/labels/${labelId}/releases`);
