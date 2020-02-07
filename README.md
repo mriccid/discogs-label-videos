@@ -10,4 +10,4 @@ Ever wanted a "Videos" section on a label's Discogs page? Here it (kinda) is
     ```
         ts-node src/index $id 
     ```
-    where `$id` is the label id, e.g. `yarn fetch 654104` 
+    where `$id` is the label id, e.g. `ts-node src/index 654104` 
