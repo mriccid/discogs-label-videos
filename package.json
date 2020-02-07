@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "get": "ts-node src/index.ts"
+    "fetch": "ts-node src/index.ts"
   },
   "dependencies": {
     "axios": "^0.19.2",
